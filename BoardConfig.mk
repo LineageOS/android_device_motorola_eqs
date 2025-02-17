@@ -29,7 +29,7 @@ ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_dne.xml
 ODM_MANIFEST_SKUS += dn
 ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/manifest_dn.xml
 ODM_MANIFEST_SKUS += n
-ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/manifest_n.xml
+ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/manifest_n.xml $(COMMON_PATH)/manifest_cape_ss.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG += \
