@@ -26,3 +26,35 @@ service vendor.stflashtool /vendor/bin/STFlashTool -c /vendor/etc/st21nfc_conf.t
 	user nfc
 	oneshot
 	disabled
+
+on property:ro.vendor.hw.nfc=ese_st
+	start gto_secure_element_hal_service_1_2
+
+service gto_secure_element_hal_service_1_2 /vendor/bin/hw/android.hardware.secure_element@1.2-service-gto
+	override
+	class hal
+	user secure_element
+	group secure_element nfc
+	disabled
+
+on property:init.svc.vendor.stflashtool=stopped && property:ro.vendor.hw.nfc=true
+	start vendor.st_nfc_hal_service
+
+on property:init.svc.vendor.stflashtool=stopped && property:ro.vendor.hw.nfc=st
+	setprop persist.vendor.nfc.config_file_name libnfc-hal-st.conf
+	start vendor.st_nfc_hal_service
+
+on property:init.svc.vendor.stflashtool=stopped && property:ro.vendor.hw.nfc=ese_st
+	setprop persist.vendor.nfc.config_file_name libnfc-hal-st54j.conf
+	start vendor.st_nfc_hal_service
+
+on property:init.svc.vendor.stflashtool=stopped && property:ro.vendor.hw.nfc=esim_st
+	setprop persist.vendor.nfc.config_file_name libnfc-hal-st54uicc.conf
+	start vendor.st_nfc_hal_service
+
+service vendor.st_nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.st
+	override
+	class hal
+	user nfc
+	group nfc
+	disabled
