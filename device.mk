@@ -84,5 +84,9 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+# Vibrator
+$(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.moto_sm8475-richtap)
+$(call soong_config_set,qti_vibrator,use_effect_stream,true)
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/eqs/eqs-vendor.mk)
