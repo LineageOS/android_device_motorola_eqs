@@ -58,9 +58,5 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 BOARD_AVB_ROLLBACK_INDEX := 22
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 22
 
-# Vibrator
-TARGET_QTI_VIBRATOR_EFFECT_LIB := libqtivibratoreffect.moto_sm8475-richtap
-TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM := true
-
 # inherit from the proprietary version
 include vendor/motorola/eqs/BoardConfigVendor.mk
