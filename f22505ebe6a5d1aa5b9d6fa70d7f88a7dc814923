@@ -16,6 +16,24 @@
       "message": "Why merge before the actual commit?",
       "revId": "f22505ebe6a5d1aa5b9d6fa70d7f88a7dc814923",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e02e56f4_e66de0df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17257
+      },
+      "writtenOn": "2025-05-09T07:22:13Z",
+      "side": 1,
+      "message": "By the vote I thought it was already merged. My bad.",
+      "parentUuid": "80705813_9a719efa",
+      "revId": "f22505ebe6a5d1aa5b9d6fa70d7f88a7dc814923",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
