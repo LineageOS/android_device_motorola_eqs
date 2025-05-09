@@ -52,6 +52,24 @@
       "parentUuid": "e02e56f4_e66de0df",
       "revId": "f22505ebe6a5d1aa5b9d6fa70d7f88a7dc814923",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7bd03869_003d3f30",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-05-09T17:12:44Z",
+      "side": 1,
+      "message": "New build for eqs will run on the 15th, hopefully we merge the topic by then.",
+      "parentUuid": "ea996ddc_96907856",
+      "revId": "f22505ebe6a5d1aa5b9d6fa70d7f88a7dc814923",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
