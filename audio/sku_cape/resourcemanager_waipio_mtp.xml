@@ -214,9 +214,6 @@
                 <custom-config key="game_mic">
                     <snd_device_name>game-mic</snd_device_name>
                 </custom-config>
-                <custom-config key="game_mic_nn-sm">
-                    <snd_device_name>game-mic</snd_device_name>
-                </custom-config>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_VOICE_CALL</name>
