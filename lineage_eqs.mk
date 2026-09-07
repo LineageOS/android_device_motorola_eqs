@@ -35,5 +35,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct="eqs_g" \
-    BuildDesc="eqs_g-user 15 V1SQS35H.58-10-8-12 a460ec-dd514 release-keys" \
-    BuildFingerprint="motorola/eqs_g/eqs:15/V1SQS35H.58-10-8-12/a460ec-dd514:user/release-keys"
+    BuildDesc="eqs_g-user 15 V1SQS35H.58-10-8-13 dc7aa6-8e385a release-keys" \
+    BuildFingerprint="motorola/eqs_g/eqs:15/V1SQS35H.58-10-8-13/dc7aa6-8e385a:user/release-keys"
